@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LSC 555 Assignment 1 - Schoonover</title>
+    <meta
+      name="keywords"
+      content="HathiTrust Digital Library, system evaluation, LSC 555"
+    />
+    <meta charset="UTF-8" />
+    <style>
+      body {border-style: dotted;
+       border-color: #fff685 /* Crown Yellow */;
+       border-width: 5px;
+      padding: 10px;
+      font-family: Calibri}
+      h2 {text-align: center;
+      background-color: #f75990 /* Sister Sister */}
+      h3:hover {color: #FF1D58; /* Yass Queen */}
+      img {display: block;
+      margin: auto;
+      width: 50%;}
+      p:hover {background-color: #00DDFF; /* Blue Light */}
+      ul:hover {color: #0049B7; /* Brutal Blue */}
+    </style>
+  </head>
+
+  <body>
+    <h1 style="text-align:center">
+      HathiTrust Digital Library System Evaluation
+    </h1>
+    <a href="https://www.hathitrust.org">
+      <img
+        src="https://www.hathitrust.org/wp-content/uploads/2023/09/SM-300X78-hathitrust-logo-horizontal.png"
+        title="HathiTrust logo"
+      />
+    </a>
+    <h2>System Introduction</h2>
+
+    <h3>Context</h3>
+
+    <p>
+      The HathiTrust Digital Library is a collaborative repository of digitized
+      content from research libraries, primarily in the United States. It was
+      launched in 2008 by a group of academic and research institutions,
+      originally led by the University of Michigan and Indiana University.
+      Today, the HathiTrust partnership includes more than 200 member libraries,
+      counting The Catholic University of America among their number.
+    </p>
+    <p>
+      Its primary goal is to ensure long-term preservation and access to a
+      comprehensive body of scholarly materials. Much of its content was
+      originally digitized through partnerships with Google Books and the
+      Internet Archive, but it is curated and maintained with a strong focus on
+      preservation, rights management, and academic usability.
+    </p>
+
+    <h3>Users</h3>
+    <p>HathiTrust serves a variety of users:</p>
+    <ul>
+      <li>
+        Students and researchers looking for access to digitized books and
+        journals.
+      </li>
+      <li>
+        Faculty and instructors seeking digital course content or historical
+        materials.
+      </li>
+      <li>
+        Librarians and digital preservationists managing collections and access
+        rights.
+      </li>
+      <li>Partner institutions who contribute and access protected content.</li>
+      <li>
+        Users with print disabilities can gain specialized access to full texts.
+      </li>
+    </ul>
+
+    <h3>Content</h3>
+    <p>HathiTrust provides access to:</p>
+    <ul>
+      <li>
+        Over 18 million digitized volumes, including books, journals, government
+        documents, and historical collections.
+      </li>
+      <li>
+        Of these, more than 6 million are in the public domain and available in
+        full view.
+      </li>
+      <li>
+        Metadata includes title, author, publication date, language, and
+        digitization source.
+      </li>
+      <li>
+        Content is in multiple languages and spans a wide range of disciplines
+        and time periods.
+      </li>
+    </ul>
+
+    <h3>Unique/Interesting Features</h3>
+    <ul>
+      <li>
+        Full-text search across all items (even if full view is restricted)
+        enables discovery, particularly useful for obscure or rare references.
+      </li>
+      <li>
+        Page image viewing allows users to see original scans alongside
+        OCR-generated text.
+      </li>
+      <li>
+        Rights management system ensures legal compliance and varying levels of
+        access based on copyright and user affiliation.
+      </li>
+      <li>
+        Accessibility features, including full-text access for users with
+        verified print disabilities.
+      </li>
+    </ul>
+
+    <h2>Evaluation & Discussion</h2>
+
+    <h3>Pros and Cons</h3>
+    <p>Pros:</p>
+    <ul>
+      <li>
+        Open access: Millions of public domain works are fully accessible.
+      </li>
+      <li>
+        Extensive content: One of the largest collections of digitized books
+        globally.
+      </li>
+      <li>
+        Preservation-focused: Strong emphasis on long-term digital preservation.
+      </li>
+      <li>
+        Academic trust: Operated by and for libraries, with transparency and
+        scholarly priorities in mind.
+      </li>
+      <li>Citation help provided, in a limited fashion.</li>
+      <li>Links to WorldCat to find material in a library.</li>
+    </ul>
+    <p>Cons:</p>
+    <ul>
+      <li>
+        Restricted access for copyrighted content: Only bibliographic metadata
+        and search snippets are available unless the user is affiliated with a
+        partner institution.
+      </li>
+      <li>
+        OCR errors: As with many mass-digitized collections, scanned text may
+        contain recognition issues, especially in older or non-Latin script
+        materials.
+      </li>
+      <li>There are no audio/visual files.</li>
+      <li>Limited citation formats provided (this is extremely nitpicky).</li>
+    </ul>
+
+    <h3>Suggestions for Improvement</h3>
+    <ul>
+      <li>
+        Expand access options for copyrighted material: More creative licensing,
+        controlled digital lending, or fair use-driven access models could make
+        more of the collection usable.
+      </li>
+      <li>
+        Improve OCR quality and metadata enrichment: Expanding efforts to
+        correct OCR errors and enhance metadata (e.g., subject headings,
+        multilingual support) would benefit all users.
+      </li>
+    </ul>
+
+    <h2>References</h2>
+    <p>
+      HathiTrust. (n.d. -a) Our mission & history.
+      <a href="https://www.hathitrust.org/about/mission-history/"
+        >https://www.hathitrust.org/about/mission-history/</a
+      >
+    </p>
+    <p>
+      HathiTrust. (n.d. -b) Welcome to HathiTrust.
+      <a href="https://www.hathitrust.org/about/"
+        >https://www.hathitrust.org/about/</a
+      >
+    </p>
+    <p>
+      HathiTrust. (n.d. -c) About the collection.
+      <a href="https://www.hathitrust.org/the-collection/"
+        >https://www.hathitrust.org/the-collection/</a
+      >
+    </p>
+  </body>
+</html>
