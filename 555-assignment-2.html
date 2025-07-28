@@ -11,71 +11,254 @@
       body {border-style: dotted;
        border-color: #fff685 /* Crown Yellow */;
        border-width: 5px;
-      padding: 10px;
-      font-family: Calibri}
+      padding: 30px;
+      font-family: Calibri;
+      font-size: 17px;}
       h2 {text-align: center;
       background-color: #f75990 /* Sister Sister */}
+      h3 {font-size: 24px;
+      text-align: center;}
       h3:hover {color: #FF1D58; /* Yass Queen */}
       img {display: block;
       margin: auto;
-      width: 30%;}
+      width: 60%;}
       p:hover {background-color: #00DDFF; /* Blue Light */}
-      ul:hover {color: #0049B7; /* Brutal Blue */}
+      ol:hover {color: #0049B7; /* Brutal Blue */}
+      li {font-size: 18px}
 	table, th, td {
   	border: 2px solid black;
-  	border-collapse: collapse;}
+  	border-collapse: collapse;
+    margin-bottom: 70px;}
 	table.center {
   	margin-left: auto; 
   	margin-right: auto;
     width: 70%;}
     th, td {
-  padding: 5px;}
+  padding: 10px;}
     </style>
   </head>
 
   <body>
     <h1 style="text-align:center">
-      Part One
+      System Analysis and Usability Test
     </h1>
     
-    <h2>Step One</h2>
+    <h2>Part One: Analysis</h2>
 
-    <table class="center" style="background-color:#00FF00">
+	<h3>Search Behaviors and System Responses</h3>
+    <table class="center" style="background-color:#fff685">
       <tr>
     <th>Input</th>
     <th>Output</th>
   </tr>
   <tr>
-    <td>entered 'election' in Search within the Collection</td>  
-    <td>146 results (Issues) arranged by Relevance</td>      
+    <td rowspan="2">entered '<i>election</i>' in <b>Search within the Collection</b></td>  
+    <td>146 results (Issues)</td>
+</tr>
+<tr>
+	<td>sorted by <i>Relevance</i></td>      
   </tr> 
   <tr>
-    <td>entered 'Nixon' in Search within the Collection</td>  
-    <td>25 results (Issues) arranged by Relevance</td>      
+    <td rowspan="2">entered '<i>Nixon</i>' in <b>Search within the Collection</b></td>  
+    <td>25 results (Issues)</td>
+    </tr>
+    <tr>
+	<td>sorted by <i>Relevance</i></td>      
   </tr> 
   <tr>
-  	<td>clicked drop down to sort by: Oldest</td>
-  	<td>25 results (Issues) displaying first 'The Tower, Vol 65, Issue 18, (March 17, 1989) Pages 1-16'</td>
+  	<td rowspan="2">clicked drop down to <b>sort by: Oldest</b></td>
+  	<td>25 results (Issues), now sorted with the oldest first</td>
+</tr>
+<tr>
+    <td>top result '<i>The Tower, Vol 65, Issue 18, (March 17, 1989) Pages 1-16</i>'</td>
   </tr>
   <tr>
-    <td rowspan="2">selected 'The Tower, Vol 65, Issue 18, (March 17, 1989)' from results</td>
+    <td rowspan="2">selected <i>The Tower, Vol 65, Issue 18, (March 17, 1989)</i> from results</td>
     <td>pages 1 -16 displayed inside in-page PDF viewer</td>
   </tr>
   <tr>
     <td><a href=https://www.jstor.org/stable/community.30546318>https://www.jstor.org/stable/community.30546318</a></td>
   </tr>
     </table>
-   <h2>Step Two</h2>
-   	<p>
-   	
-   	</p>
+<h3>Heuristic Analysis</h3>
+<p>In my review of the JSTOR interface for the Catholic University of America’s student newspaper archive, I used Nielsen’s ten usability heuristics as a framework. Overall, the system performs well, especially in terms of speed and clarity, but several areas could benefit from refinement, especially when considering undergraduate users or instructors looking to guide students through archival research.</p>
+<ol>
+<li>Visibility of System Status</li>
 
-    <h2>Step Two</h2>
-    <p>
+The system responds quickly, and while items (such as scanned PDFs) take a little longer to load, there is a clear animation indicating progress. Breadcrumbs at the top of the page help users understand where they are. These visual cues help users stay oriented—important for students new to archival interfaces.
+No specific recommendations.
+<p></p>
+
+
+<li>Match Between System and the Real World</li>
+Most of the language used is accessible, but one term—“Serial”—could confuse users unfamiliar with library terminology.
+A hover-over explanation of what “Serial” means in this context would clarify things for undergraduate users.
+<p></p>
+
+<li>User Control and Freedom</li>
+A “Back to results” link provides easy navigation. However, the collection search doesn't search the full text of the newspapers, which limits its usefulness for research.
+Adding an advanced search feature and more filtering options would improve usability—especially for students trying to locate specific information within the issues.
+<p></p>
+
+<li>Consistency and Standards</li>
+The presence of two search bars (one for JSTOR as a whole, one for the collection) is potentially confusing. The JSTOR-wide search remains visible even while viewing items within the CUA collection, often leading to accidental exits.
+Hiding or disabling the broader JSTOR search while viewing collection items could reduce this confusion.
+<p></p>
+
+<li>Error Prevention</li>
+The design is simple, and there are few opportunities for user error. One built-in protection is a pop-up dialog asking users to accept terms before downloading files.
+No recommendations at this time.
+<p></p>
+
+<li>Recognition Rather Than Recall</li>
+Labels and buttons are clear. Hover text in the item viewer is helpful.
+No recommendations.
+<p></p>
+
+<li>Flexibility and Efficiency of Use</li>
+Users can sign in to JSTOR and save materials to a personal workspace. However, more advanced filtering or sorting options would support researchers and instructors alike.
+Again, more facets and full-text search would help advanced users and make this tool more robust for classroom assignments.
+<p></p>
+
+<li>Aesthetic and Minimalist Design</li>
+The interface is clean and mostly unobtrusive. Some large thumbnail images at the collection level push actual content below the visible part of the screen. Highlighted search terms in the PDF viewer are small and easy to miss.
+Resizing images or moving them lower could help. Additionally, offering a clearer summary of search hits within a document might aid navigation, especially for students skimming for relevance.
+<p></p>
+
+<li>Help Users Recognize, Diagnose, and Recover from Errors</li>
+There aren’t many error messages. The main mistake is using the wrong search bar, which leads to leaving the collection unintentionally.
+A gentle warning or label could remind users which search bar they are using.
+<p></p>
+
+<li>Help and Documentation</li>
+JSTOR includes a “Search Help” link, but it gives only general advice. Occasionally, a chat box offers JSTOR support, but it doesn’t seem specific to this collection.
+It would be helpful to include contact info or a link back to the university’s Libraries or Special Collections—particularly useful for instructors creating assignments or students who have collection-specific questions.
+
+<h3>Summary</h3>
+<p><span style="font-size: 20px;">
+Strengths</span>
+</p>
+<ol>
+<li>Document viewer is clean and easy to use</li>
+Once I selected an issue, the PDF viewer opened right in the browser. I didn’t have to download anything, and page navigation was straightforward. This makes it easy for students to scan primary sources without getting bogged down by extra steps.
+<p></p>
+<li>Simple, unobtrusive design</li>
+The site’s layout is straightforward, and it’s clear that the content is the focus. There’s not a lot of visual clutter or unnecessary design elements, which helps reduce distraction. While it might come across as plain, the simplicity serves the archive well.
+</ol>
+<p>
+<a href="https://www.jstor.org/stable/community.30546660">
+<img src="towerarchive06.jpg" alt="image of The Tower, Volume 1, Issue 1, (October 27, 1922) Pages 1-4 in browser">
+</a>
+</p>
+<p><span style="font-size: 20px;">
+Weaknesses </span> 
+</p> 
+
+<ol>
+<li>Limited indexing restricts both search and exploration</li>
+The site’s search tool appears to only scan item-level metadata, not the full text of the digitized issues. This makes it hard for users to find specific content, particularly since there are also no thematic tags, subject headings, or filters to guide browsing. Together, these omissions make the collection feel flat and hard to navigate, especially for users approaching it without knowing exactly what they're looking for.
+<p></p>
+<li>Dual search bars create confusion</li>
+The site has two distinct search fields—one for the overall JSTOR platform and one for the specific collection. Their visual similarity and proximity could easily lead users to enter terms into the wrong box, especially since only one of them searches within the Catholic University archive. When an item is open, only the JSTOR search bar is visible, which can mislead users who want to perform a new search of the collection after viewing an item. This design choice adds friction and undermines the efficiency of an otherwise straightforward user task.
+<p>
+<img src="towerarchive05.jpg" alt="image of JSTOR search bar above item in browser with search bar circled">
+</p>
+
+    </ol>
+   <h2>Part Two: Usability Test</h2>
+   	<table class="center" style="background-color:#fff685">
+    <th colspan="2">User Questionnaire Results</th>
+   	<tr>
+    <td>The way information was presented is consistent within the system and with other web sites.</td>
+    <td>"Disagree"</td>
+    </tr>
+<tr>
+<td>The system prevented me from making mistakes and helped me easily recover from mistakes.</td>
+<td>"Neither disagree nor agree"
+</td>
+</tr>
+<td>The system provided informative feedback to help ensure that I understood what just happened.</td>
+<td>"Disagree"
+</td>
+</tr>
+
+<tr>
+<td>The system was efficient for me to use.</td>
+<td>"Disagree"
+</td>
+</tr>
+
+<tr>
+<td>The system provides attractive content that immediately invited me to use and explore the archive.</td>
+<td>"Neither disagree nor agree"
+</td>
+</tr>
+
+<tr>
+<td>I was able to quickly learn how the system works and start using it.</td>
+<td>"Neither disagree nor agree"
+</td>
+</tr>
+
+<tr>
+<td>I quickly found interesting material by using the system.
+The system was engaging and enjoyable to use.</td>
+<td>"Neither disagree nor agree"
+</td>
+</tr>
+
+<tr>
+<td>The system was engaging and enjoyable to use.</td>
+<td>"Neither disagree nor agree"
+</td>
+</tr>
+   	</table>
+    
+    <h3>Comparison of Results</h3>
+    <p>Both my heuristic evaluation and usability testing pointed to similar strengths and weaknesses in The Tower archives. My user and I both felt that:</p>
+
+    <ul>
+    <li>The limited search functionality is a major weakness.</li>
+    As I observed in my own testing, user was frustrated by the inability to search full text or filter results. They often struggled to find what they were looking for, reinforcing my conclusion that the system lacks sufficient indexing and browsing tools.
+<p></p>
+    <li>The design feels simple and consistent, but not particularly engaging.</li>
+
+    Although the layout is clean and unobtrusive—something I noted as a strength—my user was lukewarm about its appeal. They selected “neither agree nor disagree” when asked if it invited exploration, suggesting it felt more serviceable than inspiring.
+    </ul>
+<p>One small difference stood out:</p>
+
+    <ul>
+    <li> User appreciated visual previews in search results.</li>
+    I didn’t note this in my initial evaluation, but my user specifically mentioned liking the thumbnail images of each issue. These previews gave them a sense of the content before clicking and helped make the results feel a bit more dynamic. This points to the potential value of using visuals more deliberately throughout the site.
+    </ul>
+
+<p><span style="font-size: 20px;">Suggestions for Improvement</span></p>
+
+<p>Some of these ideas emerged during my heuristic evaluation, and the usability study reinforced their importance:</p>
+
+   <ul>
+   <li>Improve indexing and search functionality.</li>
+    Full-text search would significantly improve user experience, as would implementing metadata tags or categories to help users browse by topic or theme.
+<p></p>
+    <li>Clarify and streamline the search interface.</li>
+    Reducing visual confusion between the JSTOR-wide and collection-specific search bars would prevent user error and improve efficiency.
+<p></p>
+    <li>Leverage visuals more consistently.</li>
+    Since users liked the thumbnail previews, consider adding more visual cues—perhaps using highlighted snippets or featured content blocks—to encourage exploration and discovery.
+</ul>
 
     <h2>References</h2>
-    <p>
+    <p>Catholic University of America. (2025). <a href="https://www.jstor.org/site/catholic-university/tower/">The Tower.</a> </p>
+    
+    <p>Nielsen, J. (1995). <a href="https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/">How to Conduct a Heuristic Evaluation</a>.</p>
 
-    </p>
+<p>Nielsen, J. (1995). <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Ten Usability Heuristics for User Interface Design</a>.</p>
+
+<p>Toms, E. G. (2017). <a href="https://learn-brightspace.cua.edu/content/enforced/11300-XLC_LSC_255_02_555_01_1235/XLC_LSC_255_02_555_01_1235_ImportedContent_2023wkr/Toms__2017__User-centered_design_of_information_systems.pdf">User-centered design of information systems</a><i>.</i> <i>Encyclopedia of Library and Information Science, 4th Ed.</i> Taylor and Francis, 4803-4811.</p>
+
+<p>Swanson, T. A., Hayes, T., Kolan, J.,&nbsp; Hand, K., &amp; Miller, S. (2017). Guiding choices: Implementing a library website usability study. <i>Reference Services Review, 45</i>(3), 359-367.</p>
+
+<p>Syn, S. (2025). System Evaluation: Usability Testing. From <i>Week 7 Lecture Materials</i>. https://learn-brightspace.cua.edu/content/enforced/33409-LSC_255_01_1255_114/w7_Usability.pdf</p>
+
   </body>
 </html>
